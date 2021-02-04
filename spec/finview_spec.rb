@@ -1,9 +1,5 @@
-RSpec.describe Finview do
+RSpec.describe FinView do
   it "has a version number" do
-    expect(Finview::VERSION).not_to be nil
-  end
-
-  it "does something useful" do
-    expect(false).to eq(true)
+    expect(FinView::VERSION).not_to be nil
   end
 end

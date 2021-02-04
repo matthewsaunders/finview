@@ -1,6 +1,8 @@
 require "finview/version"
+require "finview/yahoo"
 
-module Finview
+module FinView
   class Error < StandardError; end
-  # Your code goes here...
+  class SymbolError < StandardError; end
+  class ResponseError < StandardError; end
 end

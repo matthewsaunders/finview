@@ -1,4 +1,5 @@
 require "bundler/setup"
+require "webmock/rspec"
 require "finview"
 
 RSpec.configure do |config|
@@ -11,4 +12,8 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+end
+
+def stub_path(stub)
+  "spec/stubs/#{stub}"
 end
